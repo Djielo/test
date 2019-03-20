@@ -1,0 +1,46 @@
+
+<!Doctype html>
+<html>
+	<head>
+		<title>Bonjour </title>
+	</head>
+	<body>
+		<a id="myLink" href="http://www.un_lien_quelconque.com">Un lien modifié dynamiquement</a>
+		<div id="menu">
+
+    <div class="item">
+        <span>Élément 1</span>
+        <span>Élément 2</span>
+    </div> <br>
+
+    <div class="publicite">
+        <span>Élément 3</span>
+        <span>Élément 4</span>
+    </div>
+
+
+</div>
+
+<div id="contenu">
+    <span>Introduction au contenu de la page...</span>
+</div>
+	<script>
+		var div = document.getElementById("contenu");
+	alert (contenu);
+
+	/*var divs =document.getElementsByTageName("contenu");
+		for( var i =0, c= divs.length ; i<c; i++){
+		alert(divs[i]);
+
+		} */
+		var link = document.getElementById("myLink");
+		var href = link.getAttribute("href");
+		alert(href);
+		link.setAttribute('href', 'http://www.siteduzero.com'); // On édite l'attribut « href »
+		
+
+	</script>
+
+	</body>
+
+</html>

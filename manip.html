@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>manip</title>
+</head>
+
+<body>
+
+	<div id="menu">
+
+    <div class="item">
+        <span>Élément 1</span>
+        <span>Élément 2</span>
+    </div>
+
+    <div class="publicite">
+        <span>Élément 3</span>
+        <span>Élément 4</span>
+    </div>
+
+</div>
+
+<div id="contenu">
+    <span>Introduction au contenu de la page...</span>
+</div>
+
+    <script>
+    	var query = document.querySelector ('#menu .item span'),
+    		queryAll = document.querySelectorAll('#menu .item span');
+    		alert(query.innerHTML);
+    		alert(queryAll.length);
+    		alert(queryAll[0].innerHTML + ' - ' + queryAll[1].innerHTML);
+    </script>
+
+</body>
+</html> 

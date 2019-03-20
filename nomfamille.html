@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello World!</title>
+</head>
+
+<body> 
+
+    <script>
+    
+        var nomSaisir = '',
+            nom,
+            controle = true;
+        while (controle){
+            nom = prompt('entrez un nom');
+            if (nom) {
+                nomSaisir += nom + ' ';
+            } else {
+                controle = false;
+            }
+        }
+        
+        alert( nom);
+
+
+        
+    </script>
+    
+
+</body>
+</html>
